@@ -5,9 +5,12 @@ The project also features implementing a dynamodb local instance and also on an 
 ##REQUIREMENTS
 Run pip3 install -r requirements.txt<br>
 The original Geohash package can be installed using <br>
-pip3 install geohash but the _____'_init___.py' has a slight flaw.
+pip3 install geohash but the ______init___.py has a slight flaw.
 <br>One can either install the normal way and correct or install my forked repo where I have already effected the changes. <br>
 The latter is used in the requirements file.<br>
+To use the dynamodb service, one has to have AWS credentials from their account via the IAM facility<br>
+More information on this in the link below<br>
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html<br>
 
 ##RUNNING DYNAMODB LOCALLY
 To install a dynamodb instance to your local instance, follow the steps in the below link:<br>
