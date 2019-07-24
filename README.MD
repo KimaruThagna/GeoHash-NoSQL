@@ -7,7 +7,7 @@ Run pip3 install -r requirements.txt<br>
 The original Geohash package can be installed using <br>
 pip3 install geohash but the ______init___.py has a slight flaw.
 <br>One can either install the normal way and correct or install my forked repo where I have already effected the changes. <br>
-The latter is used in the requirements file.<br>
+pip install git+https://github.com/KimaruThagna/geohash.<br>
 To use the dynamodb service, one has to have AWS credentials from their account via the IAM facility<br>
 More information on this in the link below<br>
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html<br>
@@ -20,3 +20,8 @@ cd dynamodb_local_latest<br>
 To start the local dynamodb instance, assuming you have Java Runtime Environment (JRE) version 6.x or newer installed, run the command<br>
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb<br>
 This fires up the local dynamoDB and thus, ready for use. Remember not to close this terminal instance.
+
+##TESTING
+Test Driven Development is good practice.
+To run the test file,<br>
+pytest test_dynamo_tests.py 

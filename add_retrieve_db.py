@@ -48,12 +48,12 @@ class DynamoDBCommunicator():
 
 db_communicator_obj = DynamoDBCommunicator()
 # add data to db
-for store in grocery_stores:
-    print(db_communicator_obj.add_to_dynamodb(store))
+# for store in grocery_stores:
+#     print(db_communicator_obj.add_to_dynamodb(store))
 
 # retrieve from dynamodb, geohash decode and store result in json_file
 data = db_communicator_obj.retrieve_from_dynamodb()
 
-with open("data/gorcery_json_list.json","w") as file_obj:
+with open("data/grocery_json_list.json","w") as file_obj:
 
     file_obj.write(str(data))
