@@ -25,3 +25,9 @@ This fires up the local dynamoDB and thus, ready for use. Remember not to close 
 Test Driven Development is good practice.
 To run the test file,<br>
 pytest test_dynamo_tests.py 
+
+## USING BUILD PIPELINES FOR TESTING CODE
+BitBucket has the options of defining pipelines in a .YAML file where it can be manually triggered or triggered with every comit to the default or specified branch, master<br>
+I have done an example similar to this repo on bitbucket but with the added functionality on pipelines.<br>
+https://bitbucket.org/KimaruThagana/geohash-nosql/src/master/ <br>
+For more info on piplines, visit https://bitbucket.org/product/features/pipelines
